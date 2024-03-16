@@ -21,9 +21,24 @@ h2{
 
 form {
     display: grid;
+    grid-template-columns: 1fr 3fr;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    grid-template-areas:
+    "nome nome nome"
+    "endereco endereco endereco"
+    "bairro cidade"
+    "estado cep"
+    "rg cpf profissao"
+    "escolaridade sexo estado_civil"
+    "nascimento cid_nasc est_nasc"
+    "n_pai n_pai n_pai"
+    "n_mae n_mae n_mae"
+    "n_conjuge n_conjuge n_conjuge"
+    "data_batismo cid_batismo"
+    "igreja_batismo igreja_batismo igreja_batismo"
+    "recebido recebido data_cadastro";
 }
 
 label {
@@ -35,7 +50,7 @@ label {
 #endereco,
 select {
     padding: 8px;
-    
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
