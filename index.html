@@ -22,7 +22,7 @@
         <h2>Assembléia de Deus Ministério Primeiro Amor</h2>
     </header>
 
-    <div class="container">
+    <section class="container">
         <form id="cadastroForm" action="#" method="POST">
             <div class="form-header">
                 <h2>Formulário para Cadastro de membro</h2>
@@ -81,47 +81,49 @@
                     <input type="text" id="input-profession" name="profissao" placeholder="Digite sua profissão">
                 </div>
 
-                <div class="input-radio">
-                    <div class="radio-title">
-                        <h6>Nivel de Escolaridade:</h6>
+                <div class="radio-group">
+                    <div class="input-radio">
+                        <div class="radio-title">
+                            <h6>Nivel de Escolaridade:</h6>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="primary" name="education">
+                            <label for="primary">Ensino fundamental</label>
+                            <input type="radio" id="high-school" name="education">
+                            <label for="high-school">Ensino médio</label>
+                            <input type="radio" id="university-education" name="education">
+                            <label for="university-education">Ensino superior</label>
+                        </div>
                     </div>
-                    <div class="radio">
-                        <input type="radio" id="primary" name="education">
-                        <label for="primary">Ensino fundamental</label>
-                        <input type="radio" id="high-school" name="education">
-                        <label for="high-school">Ensino médio</label>
-                        <input type="radio" id="university-education" name="education">
-                        <label for="university-education">Ensino superior</label>
-                    </div>
-                </div>
 
-                <div class="input-radio">
-                    <div class="radio-title">
-                        <h6>Genero:</h6>
+                    <div class="input-radio">
+                        <div class="radio-title">
+                            <h6>Genero:</h6>
+                        </div>
+                        
+                        <div class="radio">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
                     </div>
-                    
-                    <div class="radio">
-                        <input type="radio" id="male" name="gender">
-                        <label for="male">Masculino</label>
-                        <input type="radio" id="female" name="gender">
-                        <label for="female">Feminino</label>
-                    </div>
-                </div>
 
-                <div class="input-radio">
-                    <div class="radio-title">
-                        <h6>Estado Cívil:</h6>
-                    </div>
-                    
-                    <div class="radio">
-                        <input type="radio" id="married" name="marital-status">
-                        <label for="married">Casado</label>
-                        <input type="radio" id="single" name="marital-status">
-                        <label for="single">Solteiro</label>
-                        <input type="radio" id="Widower" name="marital-status">
-                        <label for="Widower">Viúvo</label>
-                        <input type="radio" id="Divorced" name="marital-status">
-                        <label for="Divorced">Divorciado</label>
+                    <div class="input-radio">
+                        <div class="radio-title">
+                            <h6>Estado Cívil:</h6>
+                        </div>
+                        
+                        <div class="radio">
+                            <input type="radio" id="married" name="marital-status">
+                            <label for="married">Casado</label>
+                            <input type="radio" id="single" name="marital-status">
+                            <label for="single">Solteiro</label>
+                            <input type="radio" id="Widower" name="marital-status">
+                            <label for="Widower">Viúvo</label>
+                            <input type="radio" id="Divorced" name="marital-status">
+                            <label for="Divorced">Divorciado</label>
+                        </div>
                     </div>
                 </div>
 
@@ -132,27 +134,27 @@
 
                 <div class="input-box">
                     <label for="input-city-birth">Cidade de Nascimento:</label>
-                    <input type="text" id="input-city-birth" name="city-birth">
+                    <input type="text" id="input-city-birth" name="city-birth" placeholder="Digite a cidade onde nasceu">
                 </div>
 
                 <div class="input-box">
                     <label for="input-state-birth">Estado de Nascimento:</label>
-                    <input type="text" id="input-state-birth" name="state-birth">
+                    <input type="text" id="input-state-birth" name="state-birth" placeholder="Digite o Estado onde nasceu">
                 </div>
 
                 <div class="input-box">
                     <label for="input-father-name">Nome do Pai:</label>
-                    <input type="text" id="input-father-name" name="father-name">
+                    <input type="text" id="input-father-name" name="father-name" placeholder="Digite o nome do seu pai">
                 </div>
 
                 <div class="input-box">
                     <label for="input-mother-name">Nome da Mãe:</label>
-                    <input type="text" id="input-mother-name" name="mother-name">
+                    <input type="text" id="input-mother-name" name="mother-name" placeholder="Digite o nome da sua mãe">
                 </div>
 
                 <div class="input-box">
                     <label for="input-spouse-name">Nome do Cônjuge:</label>
-                    <input type="text" id="input-spouse-name" name="spouse-name">
+                    <input type="text" id="input-spouse-name" name="spouse-name" placeholder="Digite o nome do seu conjogê">
                 </div>
 
                 <div class="input-box">
@@ -162,12 +164,12 @@
 
                 <div class="input-box">
                     <label for="input-city-baptism">Cidade de Batismo:</label>
-                    <input type="text" id="input-baptism" name="city-baptism">
+                    <input type="text" id="input-baptism" name="city-baptism" placeholder="Digite a cidade onde foi batizado">
                 </div>
 
                 <div class="input-box">
                     <label for="input-church-baptism">Igreja que Batizou:</label>
-                    <input type="text" id="input-church-baptism" name="church-baptism">
+                    <input type="text" id="input-church-baptism" name="church-baptism" placeholder="Igreja onde se batizou">
                 </div>
 
                 <div class="input-radio">
@@ -194,10 +196,9 @@
                 <button id="submit"><a href="#">Enviar</a></button>
             </div>
         </form>
-    </div>
+    </sectio>
 
-
-        <script src="./assets/js/script.css"></script>
+<script src="./assets/js/script.css"></script>
 </body>
 
 
