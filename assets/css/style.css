@@ -19,11 +19,11 @@ body{
 
 .header { 
     width: 100%;
-    height: 6rem;
-    padding: 20px;
-    position: fixed;
+    max-height: max-content;
     top: 0; 
     left: 0; 
+    padding: 50px;
+    margin-bottom: 20px;
     border: 1px solid gray;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
     background-color: #ffffff;
@@ -48,17 +48,15 @@ body{
 }
 
 .container {
-    margin-top: 5rem;
     width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 form {
-    width: 50%;
-    height: 80vh;
+    width: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,9 +85,10 @@ form {
  }
 
 .input-group {
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 1rem 1rem;
     overflow-y: scroll;
 }   
@@ -98,7 +97,22 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
+}
+
+
+.input-select select{
+    margin: 0.6rem 0;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px #0000001c;
+}
+
+.input-select label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000c0;
 }
 
 .radio-group {
@@ -107,16 +121,14 @@ form {
 
 .input-radio {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    margin-top: 0.62rem;
-    margin-bottom: 2rem;
-    padding: 0 0.5rem;
+    margin-bottom: 1.1rem;
+    padding: 0.5rem 2rem;
 }
 
 .radio-title h6 {
     margin-bottom: 0.75rem;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #000000c0;
 }
@@ -128,7 +140,7 @@ form {
 
 .radio input {
     margin-right: 0.35rem;
-    
+    border: 1px solid rgb(201, 201, 201);
 }
 
 .radio label {
@@ -139,9 +151,10 @@ form {
 }
 
 .input-box input {
+
     margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
-    border: none;
+    padding: 0.8rem 2rem;
+    border: 1px solid rgb(201, 201, 201);
     border-radius: 10px;
     box-shadow: 4px 4px 8px #0000001c;
 }
@@ -155,7 +168,7 @@ form {
 }
 
 .input-box label {
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #000000c0;
 }
