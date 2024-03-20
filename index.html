@@ -17,70 +17,162 @@
 
 <body>
 
-    <header class="header">
-        <img src="" alt="logo">
-        <h2>Assembléia de Deus Ministério Primeiro Amor</h2>
+    <header>
+        <div class="logo">
+            <img src="#" alt="logo">
+        </div>
+        <div class="title-header">
+            <h1>Assembléia de Deus Ministério Primeiro Amor</h1>
+        </div>
     </header>
 
     <section class="container">
-        <form id="cadastroForm" action="#" method="POST">
-            <div class="form-header">
-                <h2>Formulário para Cadastro de membro</h2>
+        <div class="form-title">
+            <h1>Formulário de cadastro de membro</h1>
+        </div>
+
+        <form id="form-register" action="#" method="POST">
+            <div class="personal-infor">
+                <div class="title">
+                    <h3>Informações Pessoais</h3>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="name">Nome Completo:*</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome completo...">
+                    </div>
+                    <div class="input-box">
+                        <label for="address">Endereço:</label>
+                        <input type="text" id="address" name="address" placeholder="Digite seu endereço...">
+                    </div>
+                    <div class="input-box">
+                        <label for="country">Bairro:</label>
+                        <input type="text" id="country" name="country" placeholder="Digite seu bairro...">
+                    </div>
+                    <div class="input-box">
+                        <label for="city">Cidade:</label>
+                        <input type="text" id="city" name="city" placeholder="Digite sua cidade...">
+                    </div>
+                    <div class="input-box">
+                        <label for="state">Estado:</label>
+                        <select id="state" name="state">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="document">RG:*</label>
+                        <input type="number" id="document" name="document" placeholder="00.000.000-0">
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF:*</label>
+                        <input type="number" id="cpf" name="cpf" placeholder="000.000.000-0">
+                    </div>
+                    <div class="input-box">
+                        <label for="tel">Telefone:</label>
+                        <input type="number" id="tel" name="tel" placeholder="(00)00000-0000">
+                    </div>
+                    <div class="input-box">
+                        <label for="birth">Data de Nascimento:*</label>
+                        <input type="date" id="birth" name="birth">
+                    </div>
+                    <div class="input-box">
+                        <label for="city-birth">Cidade de Nascimento:</label>
+                        <input type="text" id="city-birth" name="city-birth"
+                            placeholder="Digite a cidade onde nasceu...">
+                    </div>
+                    <div class="input-box">
+                        <label for="state">Estado:</label>
+                        <select id="state" name="state">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                </div>
             </div>
 
-            <div class="input-group">
-                <div class="input-box">
-                    <label for="input-name">Nome completo:</label>
-                    <input id="input-name" type="text" name="name" placeholder="Digite seu nome completo" required>
+            <div class="additional-infor">
+                <div class="title">
+                    <h3>Informações Adicionais</h3>
                 </div>
-
-                <div class="input-box">
-                    <label for="input-address">Endereço:</label>
-                    <input type="text" id="input-address" name="address" placeholder="Digite seu endereço">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-country">Bairro:</label>
-                    <input type="text" id="input-country" name="country" placeholder="Digite seu Bairro">
-                </div>
-
-                <div class="input-box input-select">
-                    <label for="input-city">Cidade:</label>
-                    <input type="text" id="input-city" name="city" placeholder="Digite sua cidade">
-                
-                    <label for="input-state">Estado</label>
-                    <select id="input-state" name="state">
-                        <option value="RJ">RJ</option>
-                    </select>
-                </div>
-
-                <div class="input-box">
-                    <label for="zipcode">CEP:</label>
-                    <input type="number" id="input-zipcode" name="cep" placeholder="XXXXX-XXX">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-mail">Email:</label>
-                    <input type="email" id="input-mail" name="email" placeholder="Digite seu e-mail">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-rg">RG:</label>
-                    <input type="number" id="input-rg" name="rg" placeholder="xx.xxx.xxx-x">
-                
-                    <label for="input-cpf">CPF:</label>
-                    <input type="number" id="input-cpf" name="cpf" required placeholder="xxx.xxx.xxx-x">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-profession">Profissão:</label>
-                    <input type="text" id="input-profession" name="profissao" placeholder="Digite sua profissão">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="profession">Profissão</label>
+                        <input type="text" id="profession" name="profession" placeholder="Digite sua profissão...">
+                    </div>
                 </div>
 
                 <div class="radio-group">
                     <div class="input-radio">
                         <div class="radio-title">
-                            <h6>Nivel de Escolaridade:</h6>
+                            <h4>Estado Cívil:</h4>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="married" name="marital-status">
+                            <label for="married">Casado</label>
+                            <input type="radio" id="single" name="marital-status">
+                            <label for="single">Solteiro</label>
+                            <input type="radio" id="Widower" name="marital-status">
+                            <label for="Widower">Viúvo</label>
+                            <input type="radio" id="Divorced" name="marital-status">
+                            <label for="Divorced">Divorciado</label>
+                        </div>
+                    </div>
+
+                    <div class="input-radio">
+                        <div class="radio-title">
+                            <h4>Nivel de Escolaridade:</h4>
                         </div>
                         <div class="radio">
                             <input type="radio" id="primary" name="education">
@@ -94,9 +186,8 @@
 
                     <div class="input-radio">
                         <div class="radio-title">
-                            <h6>Genero:</h6>
+                            <h4>Genero:</h4>
                         </div>
-                        
                         <div class="radio">
                             <input type="radio" id="male" name="gender">
                             <label for="male">Masculino</label>
@@ -104,97 +195,49 @@
                             <label for="female">Feminino</label>
                         </div>
                     </div>
+                </div>
 
-                    <div class="input-radio">
-                        <div class="radio-title">
-                            <h6>Estado Cívil:</h6>
-                        </div>
-                        
-                        <div class="radio">
-                            <input type="radio" id="married" name="marital-status">
-                            <label for="married">Casado</label>
-                            <input type="radio" id="single" name="marital-status">
-                            <label for="single">Solteiro</label>
-                            <input type="radio" id="Widower" name="marital-status">
-                            <label for="Widower">Viúvo</label>
-                            <input type="radio" id="Divorced" name="marital-status">
-                            <label for="Divorced">Divorciado</label>
-                        </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="spouse-name">Nome do Conjugê:</label>
+                        <input type="text" id="spouse-name" name="spouse-name"
+                            placeholder="Digite o nome do seu conjugê...">
                     </div>
-                </div>
-
-                <div class="input-box">
-                    <label for="input-birth">Data de Nascimento:</label>
-                    <input type="date" id="input-birth" name="birth">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-city-birth">Cidade de Nascimento:</label>
-                    <input type="text" id="input-city-birth" name="city-birth" placeholder="Digite a cidade onde nasceu">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-state-birth">Estado de Nascimento:</label>
-                    <input type="text" id="input-state-birth" name="state-birth" placeholder="Digite o Estado onde nasceu">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-father-name">Nome do Pai:</label>
-                    <input type="text" id="input-father-name" name="father-name" placeholder="Digite o nome do seu pai">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-mother-name">Nome da Mãe:</label>
-                    <input type="text" id="input-mother-name" name="mother-name" placeholder="Digite o nome da sua mãe">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-spouse-name">Nome do Cônjuge:</label>
-                    <input type="text" id="input-spouse-name" name="spouse-name" placeholder="Digite o nome do seu conjogê">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-baptism">Data do Batismo:</label>
-                    <input type="date" id="input-baptism" name="baptism">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-city-baptism">Cidade de Batismo:</label>
-                    <input type="text" id="input-baptism" name="city-baptism" placeholder="Digite a cidade onde foi batizado">
-                </div>
-
-                <div class="input-box">
-                    <label for="input-church-baptism">Igreja que Batizou:</label>
-                    <input type="text" id="input-church-baptism" name="church-baptism" placeholder="Igreja onde se batizou">
-                </div>
-
-                <div class="input-radio">
-                    <div class="radio-title">
-                        <h6>Recebido por:</h6>
+                    <div class="input-box">
+                        <label for="father-name">Nome do Pai:*</label>
+                        <input type="text" id="father-name" name="father-name" placeholder="Digite o nome do pai...">
                     </div>
-                    <div class="radio">
-                        <input type="radio" id="radio-baptism" name="marital-status">
-                        <label for="radio-baptism">Batismo</label>
-                        <input type="radio" id="acclaim" name="marital-status">
-                        <label for="acclaim">Aclamação</label>
-                        <input type="radio" id="change" name="marital-status">
-                        <label for="change">Carta de mudança</label>
-                        <input type="radio" id="reconciliation" name="marital-status">
-                        <label for="reconciliation">Reconciliação</label>
-                    </div> 
-                </div>
-
-                <div class="input-box"><label for="input-register">Data do Cadastro:</label>
-                    <input type="date" id="input-register" name="register">
+                    <div class="input-box">
+                        <label for="mother-name">Nome da Mãe:*</label>
+                        <input type="text" id="mother-name" name="mother-name" placeholder="Digite sua profissão...">
+                    </div>
                 </div>
             </div>
+
+            <div class="religious-infor">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="baptism-date">Data do Batismo:*</label>
+                        <input type="date" id="baptism-date" name="baptism-date">
+                    </div>
+                    <div class="input-box">
+                        <label for="church-baptism">Igreja de batismo:</label>
+                        <input type="text" id="church-baptism" name="church-baptism" placeholder="Digite a igreja onde se batizou...">
+                    </div>
+                    <div class="input-box">
+                        <label for="city-baptism">Cidade de Batismo:</label>
+                        <input type="text" id="city-baptism" name="city-baptism" placeholder="Digite a cidade de onde se batizou...">
+                    </div>
+                </div>
+            </div>
+
             <div class="submit">
                 <button id="submit"><a href="#">Enviar</a></button>
             </div>
         </form>
-    </sectio>
+    </section>
 
-<script src="./assets/js/script.css"></script>
+    <script src="./assets/js/script.css"></script>
 </body>
 
 
