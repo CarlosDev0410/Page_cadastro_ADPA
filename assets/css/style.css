@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,4 +10,100 @@
 body {
     width: 100%;
     background-color: #ffdfd0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 3rem;
+    box-shadow: 2px 2px 6px #0000006c;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+header .title-header {
+    color: #131212;
+    font-family: 'Truculenta', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+form {
+    width: 60%;
+    box-shadow: 2px 2px 6px #0000006c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+form .form-title {
+    color: #131212;
+    margin-bottom: 3rem;
+}
+
+.personal-infor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.personal-infor .title::after {
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid gray;
+    display: inline-block;
+    position: relative;
+}
+
+.input-group {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-box input {
+    margin-bottom: 0.6rem 0;
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #0000006c;
+}
+
+.input-box label {
+    font-weight: 500;
+}
+
+#state{
+    width: 12rem;
+    margin-bottom: 0.6rem 0;
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #0000006c;
 }
