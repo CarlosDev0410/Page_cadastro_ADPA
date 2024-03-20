@@ -88,11 +88,11 @@
                     </div>
                     <div class="input-box">
                         <label for="document">RG:*</label>
-                        <input type="number" id="document" name="document" placeholder="00.000.000-0">
+                        <input type="text" id="document" name="document" placeholder="00.000.000-0">
                     </div>
                     <div class="input-box">
                         <label for="cpf">CPF:*</label>
-                        <input type="number" id="cpf" name="cpf" placeholder="000.000.000-0">
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-0">
                     </div>
                     <div class="input-box">
                         <label for="tel">Telefone:</label>
@@ -108,7 +108,7 @@
                             placeholder="Digite a cidade onde nasceu...">
                     </div>
                     <div class="input-box">
-                        <label for="state">Estado:</label>
+                        <label for="state">Estado de Nascimento:</label>
                         <select id="state" name="state">
                             <option value="AC">Acre</option>
                             <option value="AL">Alagoas</option>
@@ -159,14 +159,22 @@
                             <h4>Estado Cívil:</h4>
                         </div>
                         <div class="radio">
-                            <input type="radio" id="married" name="marital-status">
-                            <label for="married">Casado</label>
-                            <input type="radio" id="single" name="marital-status">
-                            <label for="single">Solteiro</label>
-                            <input type="radio" id="Widower" name="marital-status">
-                            <label for="Widower">Viúvo</label>
-                            <input type="radio" id="Divorced" name="marital-status">
-                            <label for="Divorced">Divorciado</label>
+                            <div class="input-final">
+                                <input type="radio" id="married" name="marital-status">
+                                <label for="married">Casado</label>
+                            </div>
+                            <div class="input-final">
+                                <input type="radio" id="single" name="marital-status">
+                                <label for="single">Solteiro</label>
+                            </div>
+                            <div class="input-final">
+                                <input type="radio" id="Widower" name="marital-status">
+                                <label for="Widower">Viúvo</label>
+                            </div>
+                            <div class="input-final">
+                                <input type="radio" id="Divorced" name="marital-status">
+                                <label for="Divorced">Divorciado</label>
+                            </div>
                         </div>
                     </div>
 
@@ -175,12 +183,18 @@
                             <h4>Nivel de Escolaridade:</h4>
                         </div>
                         <div class="radio">
-                            <input type="radio" id="primary" name="education">
-                            <label for="primary">Ensino fundamental</label>
-                            <input type="radio" id="high-school" name="education">
-                            <label for="high-school">Ensino médio</label>
-                            <input type="radio" id="university-education" name="education">
-                            <label for="university-education">Ensino superior</label>
+                            <div class="input-final">
+                                <input type="radio" id="primary" name="education">
+                                <label for="primary">Ensino fundamental</label>
+                            </div>
+                            <div class="input-final">
+                                <input type="radio" id="high-school" name="education">
+                                <label for="high-school">Ensino médio</label>   
+                            </div>
+                            <div class="input-final">
+                                <input type="radio" id="university-education" name="education">
+                                <label for="university-education">Ensino superior</label>
+                            </div>
                         </div>
                     </div>
 
@@ -189,10 +203,14 @@
                             <h4>Genero:</h4>
                         </div>
                         <div class="radio">
-                            <input type="radio" id="male" name="gender">
-                            <label for="male">Masculino</label>
-                            <input type="radio" id="female" name="gender">
-                            <label for="female">Feminino</label>
+                            <div class="input-final">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+                            <div class="input-final">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">Feminino</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,6 +233,9 @@
             </div>
 
             <div class="religious-infor">
+                <div class="title">
+                    <h3>Informações Religiosas</h3>
+                </div>
                 <div class="input-group">
                     <div class="input-box">
                         <label for="baptism-date">Data do Batismo:*</label>
