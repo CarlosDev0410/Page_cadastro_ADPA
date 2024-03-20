@@ -34,6 +34,7 @@ header .title-header {
     color: #131212;
     font-family: 'Truculenta', sans-serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
 }
 
 .container {
@@ -44,7 +45,7 @@ header .title-header {
     font-family: 'Inter', sans-serif;
 }
 
-form {
+#form-register {
     width: 60%;
     box-shadow: 2px 2px 6px #0000006c;
     border-radius: 10px;
@@ -59,6 +60,7 @@ form {
 form .form-title {
     color: #131212;
     margin-bottom: 3rem;
+    font-size: 1.3rem;
 }
 
 .personal-infor {
@@ -66,6 +68,14 @@ form .form-title {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.personal-infor .title{
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #131212;
 }
 
 .personal-infor .title::after {
@@ -78,32 +88,153 @@ form .form-title {
 
 .input-group {
     width: 100%;
-    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: space-around;
     gap: 1rem;
-    margin-bottom: 1.5rem;
+    margin: 2rem 2rem 0 0;
+}
+
+#name,
+#address {
+    width: 25rem;
+}
+
+#country,
+#city,
+#city-birth,
+#profession {
+    width: 20rem;
 }
 
 .input-box input {
+    font-family: 'Inter', sans-serif;
     margin-bottom: 0.6rem 0;
     padding: 0.8rem 0.5rem;
     border-radius: 10px;
     border: 1px solid #0000006c;
+    font-size: 0.90rem;
+    color: #141414;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.input-box ::placeholder{
+    font-size: 0.75rem;
+    color: #0000006e;
 }
 
 .input-box label {
+    font-size: 1.1rem;
     font-weight: 500;
+    font-family: 'Inter', sans-serif;
 }
 
 #state{
-    width: 12rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #131212;
+    font-size: 0.90rem;
+    font-weight: 500;
+    width: 14rem;
     margin-bottom: 0.6rem 0;
     padding: 0.8rem 0.5rem;
     border-radius: 10px;
     border: 1px solid #0000006c;
+}
+
+.additional-infor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.additional-infor .title{
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #131212;
+}
+
+.additional-infor .title::after {
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid gray;
+    display: inline-block;
+    position: relative;
+}
+
+.radio-group {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.input-radio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 1.5rem;
+}
+
+.input-radio .radio-title h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.6rem;
+}
+
+.radio {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.input-final {
+    margin-right: 2.5rem;
+    display: flex;
+    gap: 0.85rem;
+}
+
+.input-radio .radio .input-final input {
+    width: 0.90rem;
+}
+
+#spouse-name,
+#father-name,
+#mother-name {
+    width: 25rem;
+}
+
+.religious-infor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.religious-infor .title {
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #131212;
+}
+
+.religious-infor .title::after{
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid gray;
+    display: inline-block;
+    position: relative;
 }
