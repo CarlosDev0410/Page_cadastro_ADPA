@@ -1,0 +1,123 @@
+@media screen and (max-width: 1440px) {
+
+    .whats svg {
+        width: 4rem;
+    }
+
+    .logo {
+        width: 30%;
+        justify-content: flex-start;
+        padding-left: 8rem;
+    }
+
+    .group-buttons {
+        width: 60%;
+    }
+
+    #form-register {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .whats svg {
+        width: 4rem;
+    }
+
+    .logo {
+        padding-left: 5.2rem;
+    }
+
+    .group-buttons {
+        width: 60%;
+    }
+    
+
+    form .form-title {
+        font-size: 1rem;
+    }
+
+    .input-radio .radio-title h4{
+        font-size: 0.95rem;
+    }
+
+    .input-final label {
+        font-size: 0.90rem;
+    }
+
+    .personal-infor .title {
+        font-size: 0.90rem;
+    }
+
+    .additional-infor .title{
+        font-size: 0.90rem;
+    }
+
+    .religious-infor .title{
+        font-size: 0.90rem;
+    }
+
+    .input-box label {
+        font-size: 0.85rem;
+    }
+
+    .input-box select {
+        font-size: 0.80rem;
+    }
+
+    .input-box ::placeholder {
+        font-size: 0.70rem;
+    }
+
+    #name,
+    #address,
+    #church-baptism {
+        width: 20rem;
+    }
+
+    #country,
+    #city,
+    #city-birth,
+    #profession,
+    #city-baptism {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .whats svg {
+        width: 3rem;
+    }
+
+    form .form-title {
+        font-size: 1rem;
+    }
+
+    #name,
+    #address,
+    #church-baptism {
+        width: 25rem;
+    }
+
+    #country,
+    #city,
+    #city-birth,
+    #profession,
+    #city-baptism {
+        width: 20rem;
+    }
+
+    .submit button a{
+        width: 70%;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-container {
+        display: flex;
+    }
+}
+    
