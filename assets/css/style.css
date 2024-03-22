@@ -12,30 +12,61 @@ body {
     background-color: #ffdfd0;
 }
 
-header {
+.header-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
     margin-bottom: 3rem;
     box-shadow: 2px 2px 6px #0000006c;
-    background-color: #fff;
+    background-color: #ffffff;
     z-index: 1000;
 }
 
-header .logo {
+.logo {
     width: 30%;
-    padding-left: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 header .logo img{
-    max-width: 150px ;
+    max-width: 140px ;
+    margin-right: 3rem;
 }
 
-header .title-header {
-    color: #131212;
-    font-family: 'Truculenta', sans-serif;
-    font-size: 1.5rem;
+.group-buttons {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.nav-button {
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ec3e25;
+    box-shadow: 1px 2px 3px #0000006c;
+    transition: all 0.2s ease-in;
+}
+
+.nav-button a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.nav-button:hover {
+    background-color: #ffdfd0;
+}
+
+.nav-button a:hover {
+    color: #ec3e25;
 }
 
 .container {
@@ -129,6 +160,10 @@ form .form-title {
     text-transform: uppercase;
 }
 
+.input-box input:focus{
+    border-color: #ec3e25;
+    outline: none;
+}
 
 .input-box ::placeholder{
     font-size: 0.75rem;
@@ -141,7 +176,7 @@ form .form-title {
     font-family: 'Inter', sans-serif;
 }
 
-#state{
+.input-box select {
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
     color: #131212;
@@ -152,6 +187,11 @@ form .form-title {
     padding: 0.8rem 0.5rem;
     border-radius: 10px;
     border: 1px solid #0000006c;
+}
+
+.input-box select:focus {
+    border-color: #ec3e25;
+    outline: none;
 }
 
 .additional-infor {
@@ -171,7 +211,7 @@ form .form-title {
 .additional-infor .title::after {
     content: "";
     width: 50%;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #ec3e25;
     display: inline-block;
     position: relative;
 }
@@ -212,7 +252,14 @@ form .form-title {
 }
 
 .input-radio .radio .input-final input {
-    width: 0.90rem;
+    width: 0.95rem;
+    color: black;
+}
+
+.input-final input:checked + :before{
+    border-color: #ec3e25;
+    color: #ec3e25;
+    background-color: #ec3e25;
 }
 
 #spouse-name,
@@ -226,7 +273,7 @@ form .form-title {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 .religious-infor .title {
@@ -239,7 +286,7 @@ form .form-title {
 .religious-infor .title::after{
     content: "";
     width: 50%;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #ec3e25;
     display: inline-block;
     position: relative;
 }
@@ -268,4 +315,16 @@ form .form-title {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
+}
+
+.whats {
+    padding: 0 1rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.whats svg {
+    width: 5rem;
 }
