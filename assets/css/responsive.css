@@ -4,16 +4,6 @@
         width: 4rem;
     }
 
-    .logo {
-        width: 30%;
-        justify-content: flex-start;
-        padding-left: 8rem;
-    }
-
-    .group-buttons {
-        width: 60%;
-    }
-
     #form-register {
         width: 80%;
     }
@@ -24,16 +14,7 @@
     .whats svg {
         width: 4rem;
     }
-
-    .logo {
-        padding-left: 5.2rem;
-    }
-
-    .group-buttons {
-        width: 60%;
-    }
     
-
     form .form-title {
         font-size: 1rem;
     }
@@ -116,8 +97,117 @@
 }
 
 @media screen and (max-width: 425px) {
-    .header-container {
-        display: flex;
+
+    .header-container{
+        width: 100vw;
     }
+    
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .logo img{
+        width: 110px;
+    }
+
+    .nav-button {
+        padding: 0.2rem;
+    }
+
+    .nav-button a {
+        font-size: 0.90rem;
+    }
+
+    #form-register{
+        width: 95vw;
+        padding: 1.3rem;
+    }
+
+    #name,
+    #address,
+    #church-baptism,
+    #country,
+    #city,
+    #city-birth,
+    #profession,
+    #city-baptism,
+    #spouse-name,
+    #father-name,
+    #mother-name {
+        width: 360px;
+    }
+
+    .input-box select{
+        width: 11rem;
+        font-size: 0.7rem;
+    }
+
+    .input-box input {
+        font-size: 0.68rem;
+    }
+
+    .submit{
+        width: 50%
+    }
+
+    .submit button a{
+        font-size: 0.90rem;
+    }
+
+    .whats{
+        padding: 0;
+    }
+
+    .radio {
+        flex-direction: column;
+    }
+
 }
     
+@media screen and (max-width: 375px) {
+    #name,
+    #address,
+    #church-baptism,
+    #country,
+    #city,
+    #city-birth,
+    #profession,
+    #city-baptism,
+    #spouse-name,
+    #father-name,
+    #mother-name {
+        width: 312px;
+    }
+
+    .input-box input {
+        font-size: 0.68rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    #name,
+    #address,
+    #church-baptism,
+    #country,
+    #city,
+    #city-birth,
+    #profession,
+    #city-baptism,
+    #spouse-name,
+    #father-name,
+    #mother-name {
+        width: 262px;
+    }
+
+    .input-box input {
+        font-size: 0.68rem;
+    }
+
+    
+}
