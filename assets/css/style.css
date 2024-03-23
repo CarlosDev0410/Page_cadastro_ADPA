@@ -164,6 +164,7 @@ form .form-title {
 }
 
 .input-box ::placeholder{
+    width: 100%;
     font-size: 0.75rem;
     color: #0000006e;
 }
