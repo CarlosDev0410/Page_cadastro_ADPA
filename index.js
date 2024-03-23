@@ -1,4 +1,4 @@
-import axios from 'axios';
+import SheetDB from 'sheetdb-js'
 
 querySelector('#form-register').addEventListener('submit', handleSubmit)
 
@@ -77,14 +77,8 @@ function getSelectedGender() {
     }
 }
 
-//Função para salvar no sheets
-const handleSubmit = (event) => {
-    event.preventDefault();
-    return salvar()
-}
-
 function salvar(NOME, ENDEREÇO) {
-    axios.post('https://sheetdb.io/api/v1/c9y5k24cowcb8'), {
+    post('https://sheetdb.io/api/v1/c9y5k24cowcb8'), {
         "data": {
             "NOME": user_name,
             "ENDEREÇO": address,
@@ -133,5 +127,10 @@ function coletar(){
     })
 }
 
-coletar()
+SheetDB.read('https://sheetdb.io/api/v1/c9y5k24cowcb8', {}).then(function(response){
+  console.log(response.data);
+}, function(error){
+  console.log(error);
+});
 
+console.log(SheetDB)
