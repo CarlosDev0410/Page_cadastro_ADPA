@@ -5,7 +5,7 @@
     }
 
     #form-register {
-        width: 80%;
+        width: 80vw;
     }
 }
 
@@ -70,6 +70,11 @@
 
     .whats svg {
         width: 3rem;
+    }
+
+    #form-register{
+        width: 95vw;
+        padding: 1.3rem;
     }
 
     form .form-title {
@@ -138,8 +143,9 @@
     #spouse-name,
     #father-name,
     #mother-name {
-        width: 360px;
+        width: 85vw;
     }
+
 
     .input-box select{
         width: 11rem;
@@ -169,45 +175,13 @@
 }
     
 @media screen and (max-width: 375px) {
-    #name,
-    #address,
-    #church-baptism,
-    #country,
-    #city,
-    #city-birth,
-    #profession,
-    #city-baptism,
-    #spouse-name,
-    #father-name,
-    #mother-name {
-        width: 312px;
-    }
-
     .input-box input {
         font-size: 0.68rem;
     }
-
 }
 
 @media screen and (max-width: 320px) {
-
-    #name,
-    #address,
-    #church-baptism,
-    #country,
-    #city,
-    #city-birth,
-    #profession,
-    #city-baptism,
-    #spouse-name,
-    #father-name,
-    #mother-name {
-        width: 262px;
-    }
-
     .input-box input {
         font-size: 0.68rem;
     }
-
-    
 }
