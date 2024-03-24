@@ -1,0 +1,16 @@
+{
+  "name": "page_cadastro_adpa",
+  "version": "1.0.0",
+  "description": "Página de cadastro de membro para Ass. de Deus Primeiro Amor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.1",
+    "puppeteer": "^22.6.0"
+  }
+}

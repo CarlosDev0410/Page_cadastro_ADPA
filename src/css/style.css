@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffdfd0;
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    margin-bottom: 3rem;
+    box-shadow: 2px 2px 6px #0000006c;
+    background-color: #ffffff;
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img{
+    max-width: 140px ;
+}
+
+.group-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-button {
+    padding: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ec3e25;
+    box-shadow: 1px 2px 3px #0000006c;
+    transition: all 0.2s ease-in;
+}
+
+.nav-button a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    transition: all 0.2s ease-in;
+}
+
+.nav-button:hover {
+    background-color: #ffdfd0;
+}
+
+.nav-button a:hover {
+    color: #ec3e25;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+#form-register {
+    width: 60vw;
+    box-shadow: 2px 2px 6px #0000006c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+form .form-title {
+    color: #131212;
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+}
+
+.personal-infor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.personal-infor .title{
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #131212;
+}
+
+.personal-infor .title::after {
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid #ec3e25;
+    display: inline-block;
+    position: relative;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 2rem 2rem 0 0;
+}
+
+#name,
+#address,
+#church-baptism {
+    width: 25rem;
+}
+
+#country,
+#city,
+#city-birth,
+#profession,
+#city-baptism {
+    width: 20rem;
+}
+
+.input-box input {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.6rem 0;
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #0000006c;
+    font-size: 0.90rem;
+    color: #141414;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.input-box input:focus{
+    border-color: #ec3e25;
+    outline: none;
+}
+
+.input-box ::placeholder{
+    width: 100%;
+    font-size: 0.75rem;
+    color: #0000006e;
+}
+
+.input-box label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-box select {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    color: #131212;
+    font-size: 0.90rem;
+    font-weight: 500;
+    width: 14rem;
+    margin-bottom: 0.6rem 0;
+    padding: 0.8rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #0000006c;
+}
+
+.input-box select:focus {
+    border-color: #ec3e25;
+    outline: none;
+}
+
+.additional-infor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.additional-infor .title{
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #131212;
+}
+
+.additional-infor .title::after {
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid #ec3e25;
+    display: inline-block;
+    position: relative;
+}
+
+.radio-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.input-radio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 1.5rem;
+}
+
+.input-radio .radio-title h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0.6rem;
+}
+
+.radio {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.input-final {
+    margin-right: 2.5rem;
+    display: flex;
+    gap: 0.85rem;
+}
+
+.input-final input {
+    width: 0.95rem;
+    color: black;
+}
+
+.input-final input:checked + :before{
+    border-color: #ec3e25;
+    color: #ec3e25;
+    background-color: #ec3e25;
+}
+
+#spouse-name,
+#father-name,
+#mother-name {
+    width: 25rem;
+}
+
+.religious-infor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.religious-infor .title {
+    font-size: 1.02rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #131212;
+}
+
+.religious-infor .title::after{
+    content: "";
+    width: 50%;
+    border-bottom: 2px solid #ec3e25;
+    display: inline-block;
+    position: relative;
+}
+
+.submit {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit button {
+    width: 80%;
+    border-radius: 10px;
+    background-color: #ec3e25;
+    padding: 0.8rem;
+    border: none;
+    box-shadow: 2px 2px 5px #0000006c;
+    cursor: pointer;
+}
+
+.submit button a{
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.whats {
+    padding: 0 1rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.whats svg {
+    width: 5rem;
+}
